@@ -3,5 +3,5 @@ export default function AboutPage() {
     <div>
       About
     </div>
-  )
+  );
 }
