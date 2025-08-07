@@ -1,21 +1,15 @@
-/* client側で処理を行うコード　（client側のコンポーネント） */
+/* client側で処理を行うコード */
 'use client'
 import { useState } from "react";
-import { useRouter } from "next/navigation";
-import Link from 'next/link';
 
 export default function ClientComponent() {
     const [ count, setCount ] = useState(0);
-    const router = useRouter();
     console.log('Client側で処理を実行しました');
     return (
     <div>
       クライアント
-
       {/* クリックでカウントアップ */}
       <button onClick={()=> setCount(count + 1)}> Count:{count} </button> 
-      <Link href="/about">About</Link>
-      <button onClick={() => router.push('/about')}>About</button>
     </div>
   )
 }
