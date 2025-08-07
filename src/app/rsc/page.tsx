@@ -13,6 +13,7 @@ export default function ServerComponent() {
 
       {/* このページが表示される前にプリフェッチしてデータを先に入手している ※サーバー側の処理で行う */}
       <Link href="/about">About</Link>
+      
     </div>
   )
 }
